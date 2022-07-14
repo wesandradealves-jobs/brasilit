@@ -1,0 +1,14 @@
+name: brasilit
+recipe: drupal9
+config:
+  webroot: web
+proxy:  
+  appserver:    
+    - brasilit.lndo.site    
+services:
+  brasilit:
+    type: mysql:5.7    
+    creds:      
+      user: drupal9      
+      password: drupal9      
+      database: drupal9
